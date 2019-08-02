@@ -1,16 +1,26 @@
-# Lab's Website
+# "Affiliates" - Jekyll Template by WowThemes.net
 
-This is a basic static website, created to showcase the people and projects at the Cognitive Sciences Lab, IIIT Hyderabad, under Dr. Kavita Vemuri.
-
-### Contribution Guidelines:
-
-Open issues for enhancement suggestions, errors and so on. Be as specific as you can be.
+[Live Demo](https://wowthemesnet.github.io/affiliates-jekyll-theme/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip) &nbsp; | &nbsp; [Buy me a coffee](https://www.wowthemes.net/donate/) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/bootstrap-templates/template-affiliates-bootstrap-jekyll/) &nbsp; | &nbsp; [More Jekyll Themes](https://bootstrapstarter.com/template-categories/jekyll/)
 
 
-### License:
+![affiliates](assets/images/theme1.jpg)
 
-MIT License for the entire codebase. Projects at the Cognitive Sciences Lab are proprietary, all rights and patents reserved by IIIT Hyderabad. 
 
-### Credits:
+### Copyright
 
-Based on a static Bootstrap 4 theme by [HTML5 Up.](http://html5up.net)
+Copyright (C) 2019 WowThemes.net.
+
+**Affiliates for Jekyll** is designed by [Sal](https://www.wowthemes.net) and it is licensed MIT. If this project helps you reduce time to develop or you want to remove the attribution credit, you can give me a cup of coffee :)
+
+[Buy me a coffee](https://www.wowthemes.net/donate/)
+
+-----------------
+
+### Contribute
+
+1. [Fork the repo](https://github.com/wowthemesnet/affiliates-jekyll-theme.git).
+2. Clone a copy of your fork on your local
+3. Create a branch off of master and give it a meaningful name (e.g. my-new-mediumish-feature).
+4. Make necessary changes, commit, push and open a pull request on GitHub.
+
+Thank you!
