@@ -16,7 +16,7 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->
+    <![endif]-->       
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
@@ -30,19 +30,19 @@
 	        "images/bg/bg1.jpg",
 	        "images/bg/bg2.jpg",
 	        "images/bg/bg3.jpg"
-	    ], {duration: 5000, fade: 500, centeredY: true });
+	    ], {duration: 5000, fade: 500});
 
 		$("#mapwrapper").gMap({ controls: false,
          	scrollwheel: false,
-         	markers: [{
+         	markers: [{ 	
               	latitude:40.7566,
 				longitude: -73.9863,
           	icon: { image: "images/marker.png",
               	iconsize: [44,44],
           		iconanchor: [12,46],
           		infowindowanchor: [12, 0] } }],
-          	icon: {
-              	image: "images/marker.png",
+          	icon: { 
+              	image: "images/marker.png", 
              	iconsize: [26, 46],
               	iconanchor: [12, 46],
               	infowindowanchor: [12, 0] },
@@ -51,37 +51,33 @@
           	zoom: 14 });
     });
     </script>
-</head>
-
+</head><!--/head-->
 <body>
 <div id="preloader"></div>
-    <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+    <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
+    <div id="search-wrapper">
+        <div class="container">
+            <input id="search-box" placeholder="Search">
+        </div>
+    </div>
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fa fa-bars"></i>
                 </button>
-                <!-- <span class="pe-7s-gleam bounce-in"></span> -->
-                 <a class="navbar-brand" href="index.html"><h1> CogSci Lab, IIITH</h1></a>
+                <a class="navbar-brand" href="index.html"><h1><span class="pe-7s-gleam bounce-in"></span> IMPACT</h1></a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="services.html">The Team</a></li>
-                    <li><a href="portfolio.html">Publications</a></li>
-                    <li><a href="blog.html">Collaborations</a></li>
-                    <li><a href="contact-us.html">Contact</a></li>
-                    <!-- <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="icon-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="project-item.html">Project Single</a></li>
-                            <li><a href="blog-item.html">Blog Single</a></li>
-                            <li class="active"><a href="404.html">404</a></li>
-                        </ul>
-                    </li> -->
-                    <!-- <li><span class="search-trigger"><i class="fa fa-search"></i></span></li> -->
+                    <li class="active"><a href="index.html">Home</a></li>                    
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>                    
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><span class="search-trigger"><i class="fa fa-search"></i></span></li>
                 </ul>
             </div>
         </div>
@@ -95,9 +91,9 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="carousel-content center centered">
-                                	<!-- <span class="home-icon pe-7s-gleam bounce-in"></span> -->
-                                    <h2 class="boxed animation animated-item-1 fade-down">Perception Engineering Group</h2>
-                                    <p class="boxed animation animated-item-2 fade-up">Neuroeconomics | Empathy | Neuro-rehabilitation | Games</p>
+                                	<span class="home-icon pe-7s-gleam bounce-in"></span>
+                                    <h2 class="boxed animation animated-item-1 fade-down">WE GONNA HELP YOU MAKE AN IMPACT</h2>
+                                    <p class="boxed animation animated-item-2 fade-up">Our expertise will guide you to success. Without Fail.</p>
                                     <br>
                                     <a class="btn btn-md animation bounce-in" href="#services">Learn More</a>
                                 </div>
@@ -112,17 +108,16 @@
     <div id="content-wrapper">
         <section id="services" class="white">
             <div class="container">
-            <div class="gap"></div>
+            <div class="gap"></div> 
                 <div class="row">
                     <div class="col-md-12">
                         <div class="center gap fade-down section-heading">
                             <h2 class="main-title">Stuff We Do</h2>
                             <hr>
                             <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
-                        </div>
+                        </div>                
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="service-block">
@@ -196,19 +191,17 @@
                 </div><!--/.row-->
             </div>
             <div class="gap"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="center gap fade-down section-heading">
-                            <h2 class="main-title">Our Skills</h2>
-                            <hr>
-                            <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="main-title">Our Skills</h2>
+                        <hr>
+                        <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+                    </div>               
                 </div>
             </div>
-            <div class="container">
-            <div class="row">
+            <div class="container">     
+            <div class="row">            
 	                <div class="col-md-3">
 	                    <div class="tile-progress tile-red bounce-in">
 	                        <div class="tile-header">
@@ -279,10 +272,10 @@
         </section>
 
 
-		<section id="single-quote" class="divider-section">
+		<section id="single-quote" class="divider-section"> 	            	        
 	            <div class="container">
-	            	<div class="gap"></div>
-	                <div class="row">
+	            	<div class="gap"></div> 
+	                <div class="row">                        
 	                    <div class='col-md-offset-2 col-md-8 fade-up'>
 	                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
 	                            <div class="carousel-inner">
@@ -298,9 +291,9 @@
 	                                            </div>
 	                                        </div>
 	                                    </blockquote>
-	                                </div>
-	                            </div>
-	                        </div>
+	                                </div>	                                
+	                            </div>                                     
+	                        </div> 
 	                    </div>
 	                </div>
 	                <div class="gap"></div>
@@ -316,7 +309,7 @@
 	                        <h2 class="main-title">A Little About Us</h2>
 	                        <hr>
 	                        <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
-	                    </div>
+	                    </div>                
 	                </div>
 	            </div>
 	            <div class="row">
@@ -370,21 +363,16 @@
 	                <h2 class="main-title">Meet The Team</h2>
 	                <hr>
 	                <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
-	            </div>
+	            </div> 
 	            <div class="gap"></div>
 
 	            <div id="meet-the-team" class="row">
 	                <div class="col-md-3 col-xs-6">
 	                    <div class="center team-member">
-                            <div class="team-image">
-                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/team01.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/team/team01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
+	                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/team01.jpg" alt="">
 	                        <div class="team-content fade-up">
 	                            <h5>Daniel Jones<small class="role muted">Web Design</small></h5>
-	                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
+	                            <p>Brother she add yet see minuter natural smiling article painted. Themselves at dispatched interested insensible am be prosperous reasonably it. In either so spring wished. Melancholy way she boisterous use.</p>
 	                            <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
 	                        </div>
 	                    </div>
@@ -392,53 +380,38 @@
 
 	                <div class="col-md-3 col-xs-6">
 	                    <div class="center team-member">
-                            <div class="team-image">
-                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/team02.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/team/team02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
+	                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/team02.jpg" alt="">
 	                        <div class="team-content fade-up">
 	                            <h5>John Smith<small class="role muted">Marketing Director</small></h5>
-	                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
+	                            <p>Brother she add yet see minuter natural smiling article painted. Themselves at dispatched interested insensible am be prosperous reasonably it. In either so spring wished. Melancholy way she boisterous use.</p>
 	                            <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
 	                        </div>
 	                    </div>
-	                </div>
+	                </div>        
 	                <div class="col-md-3 col-xs-6">
 	                    <div class="center team-member">
-                            <div class="team-image">
-                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/team03.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/team/team03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
+	                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/team03.jpg" alt="">
 	                        <div class="team-content fade-up">
 	                            <h5>Dave Gorman<small class="role muted">Web Design</small></h5>
-	                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
+	                            <p>Brother she add yet see minuter natural smiling article painted. Themselves at dispatched interested insensible am be prosperous reasonably it. In either so spring wished. Melancholy way she boisterous use.</p>
 	                            <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
 	                        </div>
 	                    </div>
-	                </div>
+	                </div>        
 	                <div class="col-md-3 col-xs-6">
 	                    <div class="center team-member">
-                            <div class="team-image">
-    	                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/team04.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/team/team04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
+	                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/team04.jpg" alt="">
 	                        <div class="team-content fade-up">
 	                            <h5>Steve Smith<small class="role muted">Sales Assistant</small></h5>
-	                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
+	                            <p>Brother she add yet see minuter natural smiling article painted. Themselves at dispatched interested insensible am be prosperous reasonably it. In either so spring wished. Melancholy way she boisterous use.</p>
 	                            <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
 	                        </div>
 	                    </div>
 	                </div>
 	            </div><!--/#meet-the-team-->
-	            <div class="gap"></div>
-	            <div class="gap"></div>
-            </div>
+	            <div class="gap"></div>  
+	            <div class="gap"></div>   
+            </div>      
         </section>
 
         <section id="stats" class="divider-section">
@@ -475,107 +448,107 @@
                     </div>
                 </div>
             </div>
-            <div class="gap"></div>
+            <div class="gap"></div> 
         </section>
 
         <section id="portfolio" class="white">
        		<div class="container">
-	        	<div class="gap"></div>
+	        	<div class="gap"></div> 
 		        	<div class="center gap fade-down section-heading">
 		                <h2 class="main-title">Examples Of Excellence</h2>
 		                <hr>
 		                <p>She evil face fine calm have now. Separate screened he outweigh of distance landlord.</p>
-		            </div>
-<ul class="portfolio-filter fade-down center">
-                        <li><a class="btn btn-outlined btn-primary active" href="#" data-filter="*">All</a></li>
-                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".apps">Apps</a></li>
-                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".nature">Nature</a></li>
-                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".design">Design</a></li>
-                    </ul><!--/#portfolio-filter-->
+		            </div> 
+	                <ul class="portfolio-filter fade-down center">
+	                    <li><a class="btn btn-outlined btn-primary active" href="#" data-filter="*">All</a></li>
+	                    <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".apps">Apps</a></li>
+	                    <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".nature">Nature</a></li>
+	                    <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".design">Design</a></li>
+	                </ul><!--/#portfolio-filter-->
 
-                    <ul class="portfolio-items col-3 isotope fade-up">
-                        <li class="portfolio-item apps isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio01.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla nature isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio02.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item bootstrap design isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio03.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla design apps isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio04.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla apps isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio05.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item wordpress nature isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio06.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla design apps isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio07.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla nature isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio08.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item wordpress design isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio09.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio09.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                    </ul>
+	                <ul class="portfolio-items col-3 isotope fade-up">
+	                    <li class="portfolio-item apps isotope-item">
+	                        <div class="item-inner">
+	                            <img src="images/portfolio/folio01.jpg" alt="">
+	                            <h5>Portfolio Project</h5>
+	                            <div class="overlay">
+	                                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+	                            </div>           
+	                        </div>           
+	                    </li><!--/.portfolio-item-->
+	                    <li class="portfolio-item joomla nature isotope-item">
+	                        <div class="item-inner">
+	                            <img src="images/portfolio/folio02.jpg" alt="">
+	                            <h5>Portfolio Project</h5>
+	                            <div class="overlay">
+	                                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>              
+	                            </div>           
+	                        </div>           
+	                    </li><!--/.portfolio-item-->
+	                    <li class="portfolio-item bootstrap design isotope-item">
+	                        <div class="item-inner">
+	                            <img src="images/portfolio/folio03.jpg" alt="">
+	                            <h5>Portfolio Project</h5>
+	                            <div class="overlay">
+	                                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>        
+	                            </div>           
+	                        </div>           
+	                    </li><!--/.portfolio-item-->
+	                    <li class="portfolio-item joomla design apps isotope-item">
+	                        <div class="item-inner">
+	                            <img src="images/portfolio/folio04.jpg" alt="">
+	                            <h5>Portfolio Project</h5>
+	                            <div class="overlay">
+	                                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>          
+	                            </div>           
+	                        </div>           
+	                    </li><!--/.portfolio-item-->
+	                    <li class="portfolio-item joomla apps isotope-item">
+	                        <div class="item-inner">
+	                            <img src="images/portfolio/folio05.jpg" alt="">
+	                            <h5>Portfolio Project</h5>
+	                            <div class="overlay">
+	                                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>          
+	                            </div>    
+	                        </div>       
+	                    </li><!--/.portfolio-item-->
+	                    <li class="portfolio-item wordpress nature isotope-item">
+	                        <div class="item-inner">
+	                            <img src="images/portfolio/folio06.jpg" alt="">
+	                            <h5>Portfolio Project</h5>
+	                            <div class="overlay">
+	                                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
+	                            </div>           
+	                        </div>           
+	                    </li><!--/.portfolio-item-->
+	                    <li class="portfolio-item joomla design apps isotope-item">
+	                        <div class="item-inner">
+	                            <img src="images/portfolio/folio07.jpg" alt="">
+	                            <h5>Portfolio Project</h5>
+	                            <div class="overlay">
+	                                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>          
+	                            </div>           
+	                        </div>           
+	                    </li><!--/.portfolio-item-->
+	                    <li class="portfolio-item joomla nature isotope-item">
+	                        <div class="item-inner">
+	                            <img src="images/portfolio/folio08.jpg" alt="">
+	                            <h5>Portfolio Project</h5>
+	                            <div class="overlay">
+	                                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>          
+	                            </div>    
+	                        </div>       
+	                    </li><!--/.portfolio-item-->
+	                    <li class="portfolio-item wordpress design isotope-item">
+	                        <div class="item-inner">
+	                            <img src="images/portfolio/folio09.jpg" alt="">
+	                            <h5>Portfolio Project</h5>
+	                            <div class="overlay">
+	                                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio09.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
+	                            </div>           
+	                        </div>           
+	                    </li><!--/.portfolio-item-->
+	                </ul>
                 </div>
             </section>
 
@@ -588,7 +561,7 @@
                             <hr>
                             <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
                             <div class="gap"></div>
-                        </div>
+                        </div>                         
 	                    <div class='col-md-offset-2 col-md-8 fade-up'>
 	                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
 	                            <!-- Bottom Carousel Indicators -->
@@ -596,9 +569,9 @@
 	                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
 	                                <li data-target="#quote-carousel" data-slide-to="1"></li>
 	                                <li data-target="#quote-carousel" data-slide-to="2"></li>
-	                            </ol>
+	                            </ol>                                
 	                            <!-- Carousel Slides / Quotes -->
-	                            <div class="carousel-inner">
+	                            <div class="carousel-inner">                                
 	                              <!-- Quote 1 -->
 	                                <div class="item active">
 	                                    <blockquote>
@@ -641,8 +614,8 @@
 	                                        </div>
 	                                    </blockquote>
 	                                </div>
-	                            </div>
-	                        </div>
+	                            </div>                                     
+	                        </div> 
 	                    </div>
 	                </div>
 	                <div class="gap"></div>
@@ -653,57 +626,18 @@
                 <div class="container">
                     <div class="center gap fade-down section-heading">
                    		<div class="gap"></div>
-                        <h2 class="main-title">Our Publications</h2>
+                        <h2 class="main-title">From The Blog</h2>
                         <hr>
-                        <!-- <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p> -->
-                    </div>
+                        <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+                    </div>  
                     <div class="gap"></div>
                     <div class="row">
-                        <div class="col-md-10 col-md-offset-1 fade-up">
-                            <ol>
-                                <li>Mayank Agrawal, Kavita Vemuri. Analyzing High Decibel Honking Effect on Driving Behavior Using VR and Bio-Sensors. AutomotiveUI 2019</li>
-                                <li>Sravya Vatsavayi, Priyanka Srivastava, Kavita Vemuri, Analyzing Performance Differences in Artists and Engineers- An RPM Study. Cognitive Science Society 2019,  poster presentation. </li>
-                                <li>Sravya Vatsavayi, Kavita Vemuri, 'Analysing visual search strategies in artists and engineers - An eye tracking study on RPM', International Society for Intelligence Research Conference, 2019. </li>
-                                <li>Kara J. Emery, Courtney Matera, Vicki J. Volbrecht, David H. Peterzell, Kavita Vemuri, Paul Kay, Michael A. Webster , "Categorical effects on color appearance". ICVS 2019. </li>
-                                <li>Courtney Matera, Saksham Agrawal, Siddhart Srivatsav, Kara J. Emery, Vicki J. Volbrecht, Kavita Vemuri, Paul Kay, Michael A. Webster. A new angle on hue scaling. OSA Vision 2018, Reno Nevada.</li>
-                                <li>Talia Retter, Siddhart Srivatsav, Kavita Vemuri, Michael A. Webster. Sensitivity to the number of colors in an ensemble. OSA Vision 2018, Reno, Nevada. </li>
-                                <li>Mayank Agarwal, Kavita Vemuri. A Heterogeneous Traffic Virtual-Reality Simulator to Study Irritation/Anger and Driving Behaviour under Adverse Conditions. ACM British HCI 2018. (Best Poster Award). </li>
-                                <li>Rajat Singla, Raviraja Ganta and Kavita Vemuri. An Exergame Themed on the Power of Religious Belief for Stroke/Motor Rehabilitation. ACM British HCI 2018. </li>
-                                <li>Kavita Vemuri, Akanksha Srivastava, Saksham Aggrwal, Mithra Anand. Age, pupil size differences and color choices for the “dress” and the “jacket”. JOSA A. 2018. </li>
-                                <li>Nithiyashree Upara, Aditi Mavalankar, Kavita Vemuri. Eye tracking in naturalistic badminton play — comparing visual gaze pattern strategy in world-rank and amateur player. ACM ETRA PETMEI 2018. </li>
-                                <li>Dhriti Sayesh Goyal, Kavita Vemuri. Risk-taking in Roulette Wheel – Exploring the Influence of Gender, Education stream and Co-player. Foundations for Utility and Risk, FUR 2018, University of York, UK. </li>
-                                <li>Vivek Kaushal, Dhriti Sayesh Goyal, Kavita Vemuri. Comparative study of risk-taking and academic performance. Foundations for Utility and Risk, FUR 2018, University of York, UK. </li>
-                                <li>Shristi Dang, Arunima Ved, Kavita Vemuri (2017), Comparing knowledge acquisition in jigsaw map puzzle game versus self-study. European Conference on Game Based Learning, 2017, Graz, Austria. </li>
-                                <li>Raviraja Ganta; Rohan Gupta; Rajat Singla; kavita Vemuri (2017) “Power of Belief” - a game for neuro-motor rehabilitation. 11th European Conference on Games Based Learning (ECGBL17), Graz, Austria. </li>
-                                <li>Nithiyasree Upara, Jahanavi Nukireddy, Kavita Vemuri. A new test for pattern matching intelligence for school children and performance analysis with academic grade point. International Society for Intelligence Research (ISIR) 2017, Montreal, Canada. </li>
-                                <li>Mayank Agarwal & Kavita Vemuri, Simulating and analyzing chaos of Indian Traffic Condition, 18th IRF World Road Meet 2017, New Delhi , India. </li>
-                                <li>Rohan Bhatial & Kavita Vemuri, Effect of Highbeam glare on driver response time. 18th IRF World Road Meet 2017, New Delhi , India . </li>
-                                <li>Vemuri K, Surampudi BR. 2015. Evidence of stimulus correlated empathy modes - Group ICA of fMRI data. Brain and Cogn. 94:32-43</li>
-                                <li>Vemuri K., Surampudi BR. 2015. An exploratory investigation of functional network connectivity of empathy and default mode networks in a free-viewing task. Brain Connect. Aug;5(6):384-400 </li>
-                                <li>Vemuri K, Bisla K., Mulpuru S, Varadarajan S. Does normal pupil diameter differences in population underlie the color selection of the #dress?. JOSA A ,Vol. 33, No. 3 / March 2016</li>
-                                <li>Kukar D., Vemuri,K.(2015) Investigating human visual search/cognition strategy in kinship matching – face matching experiment. 3rd International Conference on Cognition, Brain and Computation, IIT Gandhinagar, India. </li>
-                                <li>Aditi Mavalankar, Snigdha Dagar, Kavita Vemuri. Decoding (un)known opponent's game play, a real-life badminton eye tracking study. EAPCogsci 2015. Full paper. </li>
-                                <li>SaiKrishna Mulpuru and Kavita Vemuri. Tracking pedestrain in highbeam condition – a visual sensitivity as a function of pupil dilation analysis. ECVP 2015. </li>
-                                <li>Rajat Singla, Junaid Ahmed, Abhishek Aggarwal, Divya Kukkar, Rajendra Kumar, Kavita Vemuri.(2016) Intelligent games and sensor feedback interface for neuro-rehabilitation therapy. WCNR 2016, Philadelphia, USA</li>
-                                <li>Jasmine Bhanushali, Sai Parthasarathy Miduthuri, Kavita Vemuri. A dome-shaped interface embedded with low-cost infrared sensors for car-game control by gesture recognition. Oral presentation. HCI International 2015. Los Angeles. </li>
-                                <li>Abhishek Agarwal, Divya Kukkar, Junaid Ahmed, Rajat Singla, Kavita Vemuri . A game for inducing movement of the stroke affected arm based on the mirror-box concept. ECONS Neurogamng 2015, Los Angeles. </li>
-                                <li>Drithi Goyal, Kavita Vemuri. Preliminary comparative analysis of activations due to controlled deep-breathing and resting-state in regions covered by major arteries – a fMRI study.CBC 2015, IITG, India. </li>
-                                <li>Vemuri, K., Poplin, A. and Monachesi, P. 2014. YouPlaceIt!: a Serious Digital Game for Achieving Consensus in Urban Planning 17th AGILE Conference on Geographic Information Science (AGILE 2014), Spain. </li>
-                                <li>Niyati Mishra, Vamshi Velagapuri, and Kavita Vemuri. Visuo-spatial recall and reproduction of geometrical shapes and math equations as a function of presentation style – static, block and animation. Poster at ACCS 2014, IIT Kanpur. </li>
-                                <li>Kavita Vemuri. Analyzing ‘The Omen’: the child is evil but quantum of punishment is debatable. SCMI 2013. </li>
-                                <li>Kavita Vemuri. Estimating the functional networks from sudden respiratory changes – a fMRI Group ICA method study. 2012. Medimage 2012, Mumbai. </li>
-                            </ol>
-                        </div>
-                        <div class="col-md-4 fade-up">
-                        </div>
-                    </div>
-                    <!-- <div class="row">
 	                    <div class="col-md-4">
 	                        <div class="post">
 	                            <div class="post-img-content">
 	                                <img src="images/portfolio/folio02.jpg" class="img-responsive" />
 	                                <div class="overlay">
-	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
 	                                </div>
 	                            </div>
 	                            <div class="content">
@@ -727,7 +661,7 @@
 	                            <div class="post-img-content">
 	                                <img src="images/portfolio/folio06.jpg" class="img-responsive" />
 	                                <div class="overlay">
-	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
 	                                </div>
 	                            </div>
 	                            <div class="content">
@@ -751,7 +685,7 @@
 	                            <div class="post-img-content">
 	                                <img src="images/portfolio/folio11.jpg" class="img-responsive" />
 	                                <div class="overlay">
-	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
 	                                </div>
 	                            </div>
 	                            <div class="content">
@@ -770,7 +704,7 @@
 	                            </div>
 	                        </div>
 	                    </div>
-                    </div>
+                    </div> 
                     <div class="gap"></div>
                     <div class="row">
 	                    <div class="col-md-4">
@@ -778,7 +712,7 @@
 	                            <div class="post-img-content">
 	                                <img src="images/portfolio/folio02.jpg" class="img-responsive" />
 	                                <div class="overlay">
-	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
 	                                </div>
 	                            </div>
 	                            <div class="content">
@@ -802,7 +736,7 @@
 	                            <div class="post-img-content">
 	                                <img src="images/portfolio/folio06.jpg" class="img-responsive" />
 	                                <div class="overlay">
-	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
 	                                </div>
 	                            </div>
 	                            <div class="content">
@@ -826,7 +760,7 @@
 	                            <div class="post-img-content">
 	                                <img src="images/portfolio/folio11.jpg" class="img-responsive" />
 	                                <div class="overlay">
-	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
 	                                </div>
 	                            </div>
 	                            <div class="content">
@@ -845,14 +779,152 @@
 	                            </div>
 	                        </div>
 	                    </div>
-                    </div> -->
+                    </div> 
+                    <div class="gap"></div>                              
                 </div>
        		</section>
 
-            
-			<!-- <div id="mapwrapper">
+            <section id="pricing" class="white">
+                <div class="container">
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="main-title">So, How Much?</h2>
+                        <hr>
+                        <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+                    </div>  
+                    <div class="gap"></div>
+                    <div id="pricing-table" class="row">
+                        <div class="col-md-3 col-xs-6 flip-in">
+                            <ul class="plan plan1">
+                                <li class="plan-name">
+                                    <h3>Basic</h3>
+                                </li>
+                                <li class="plan-price">
+                                    <div>
+                                        <span class="price"><sup>$</sup>10</span>
+                                        <small>month</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>5GB</strong> Storage
+                                </li>
+                                <li>
+                                    <strong>1GB</strong> RAM
+                                </li>
+                                <li>
+                                    <strong>400GB</strong> Bandwidth
+                                </li>
+                                <li>
+                                    <strong>10</strong> Email Address
+                                </li>
+                                <li>
+                                    <strong>Forum</strong> Support
+                                </li>
+                                <li class="plan-action">
+                                    <a href="#" class="btn btn-outlined btn-primary btn-md btn-white">Signup</a>
+                                </li>
+                            </ul>
+                        </div><!--/.col-md-3-->
+                        <div class="col-md-3 col-xs-6 flip-in">
+                            <ul class="plan plan2 featured">
+                                <li class="plan-name">
+                                    <h3>Standard</h3>
+                                </li>
+                                <li class="plan-price">
+                                    <div>
+                                        <span class="price"><sup>$</sup>20</span>
+                                        <small>month</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>5GB</strong> Storage
+                                </li>
+                                <li>
+                                    <strong>1GB</strong> RAM
+                                </li>
+                                <li>
+                                    <strong>400GB</strong> Bandwidth
+                                </li>
+                                <li>
+                                    <strong>10</strong> Email Address
+                                </li>
+                                <li>
+                                    <strong>Forum</strong> Support
+                                </li>
+                                <li class="plan-action">
+                                    <a href="#" class="btn btn-outlined btn-primary btn-md">Signup</a>
+                                </li>
+                            </ul>
+                        </div><!--/.col-md-3-->
+                        <div class="col-md-3 col-xs-6 flip-in">
+                            <ul class="plan plan3">
+                                <li class="plan-name">
+                                    <h3>Advanced</h3>
+                                </li>
+                                <li class="plan-price">
+                                    <div>
+                                        <span class="price"><sup>$</sup>40</span>
+                                        <small>month</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>50GB</strong> Storage
+                                </li>
+                                <li>
+                                    <strong>8GB</strong> RAM
+                                </li>
+                                <li>
+                                    <strong>1024GB</strong> Bandwidth
+                                </li>
+                                <li>
+                                    <strong>Unlimited</strong> Email Address
+                                </li>
+                                <li>
+                                    <strong>Forum</strong> Support
+                                </li>
+                                <li class="plan-action">
+                                    <a href="#" class="btn btn-outlined btn-primary btn-md btn-white">Signup</a>
+                                </li>
+                            </ul>
+                        </div><!--/.col-md-3-->
+                        <div class="col-md-3 col-xs-6 flip-in">
+                            <ul class="plan plan4">
+                                <li class="plan-name">
+                                    <h3>Mighty</h3>
+                                </li>
+                                <li class="plan-price">
+                                    <div>
+                                        <span class="price"><sup>$</sup>100</span>
+                                        <small>month</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>50GB</strong> Storage
+                                </li>
+                                <li>
+                                    <strong>8GB</strong> RAM
+                                </li>
+                                <li>
+                                    <strong>1024GB</strong> Bandwidth
+                                </li>
+                                <li>
+                                    <strong>Unlimited</strong> Email Address
+                                </li>
+                                <li>
+                                    <strong>Forum</strong> Support
+                                </li>
+                                <li class="plan-action">
+                                    <a href="#" class="btn btn-outlined btn-primary btn-md btn-white">Signup</a>
+                                </li>
+                            </ul>
+                        </div><!--/.col-md-3-->
+                    </div>
+                    <div class="gap"></div> 
+                </div>
+            </section>
+
+			<div id="mapwrapper">
 				<div id="map"></div>
-			</div> -->
+			</div>
 
             <section id="contact" class="white">
                 <div class="container">
@@ -861,7 +933,7 @@
                         <h2 class="main-title">Get In Touch</h2>
                         <hr>
                         <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
-                    </div>
+                    </div>    
                     <div class="gap"></div>
                     <div class="row">
                         <div class="col-md-4 fade-up">
@@ -874,7 +946,7 @@
                                 <span class="icon icon-facebook"></span> <a href="#">Infinity Agency</a> <br/>
                             </p>
                         </div><!-- col -->
-
+                    
                         <div class="col-md-8 fade-up">
                             <h3>Drop Us A Message</h3>
                             <br>
@@ -888,8 +960,8 @@
                                 <input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Submit" />
                             </form>
                         </div><!-- col -->
-                    </div><!-- row -->
-                    <div class="gap"></div>
+                    </div><!-- row -->  
+                    <div class="gap"></div>         
                 </div>
             </section>
         </div>
@@ -936,7 +1008,7 @@
                                     <small class="muted">Posted 14 April 2014</small>
                                 </div>
                             </div>
-                        </div>
+                        </div>  
                     </div><!--/.col-md-3-->
 
                     <div class="col-md-3 col-sm-6">
@@ -955,10 +1027,10 @@
         <footer id="footer" class="">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8">
-                        &copy; 2019 Your Site Name. All Rights Reserved. <a href="https://templatemag.com/bootstrap-templates/">Bootstrap templates</a> by TemplateMag.
+                    <div class="col-sm-6">
+                        &copy; 2019 <a target="_blank" href="http://www.distinctivethemes.com" title="Premium Themes and Templates">Distinctive Themes</a>. All Rights Reserved.
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <ul class="pull-right">
                             <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
                         </ul>
@@ -971,8 +1043,8 @@
 
     <script src="js/plugins.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script> -->
+    <script src="js/jquery.prettyPhoto.js"></script>   
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script> 
     <script src="js/init.js"></script>
 </body>
 </html>
