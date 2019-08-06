@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,50 +25,60 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57x57.png">
 
     <script type="text/javascript">
-    jQuery(document).ready(function($){
-    'use strict';
-        jQuery('body').backstretch([
-            "http://placehold.it/800x600",
-            "http://placehold.it/800x600",
-            "http://placehold.it/800x600"
-        ], {duration: 5000, fade: 500});
+        jQuery(document).ready(function ($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "http://placehold.it/800x600",
+                "http://placehold.it/800x600",
+                "http://placehold.it/800x600"
+            ], { duration: 5000, fade: 500 });
 
-        $("#mapwrapper").gMap({ controls: false,
-            scrollwheel: false,
-            markers: [{
-                latitude:40.7566,
+            $("#mapwrapper").gMap({
+                controls: false,
+                scrollwheel: false,
+                markers: [{
+                    latitude: 40.7566,
+                    longitude: -73.9863,
+                    icon: {
+                        image: "images/marker.png",
+                        iconsize: [44, 44],
+                        iconanchor: [12, 46],
+                        infowindowanchor: [12, 0]
+                    }
+                }],
+                icon: {
+                    image: "images/marker.png",
+                    iconsize: [26, 46],
+                    iconanchor: [12, 46],
+                    infowindowanchor: [12, 0]
+                },
+                latitude: 40.7566,
                 longitude: -73.9863,
-            icon: { image: "images/marker.png",
-                iconsize: [44,44],
-                iconanchor: [12,46],
-                infowindowanchor: [12, 0] } }],
-            icon: {
-                image: "images/marker.png",
-                iconsize: [26, 46],
-                iconanchor: [12, 46],
-                infowindowanchor: [12, 0] },
-            latitude:40.7566,
-            longitude: -73.9863,
-            zoom: 14 });
-    });
+                zoom: 14
+            });
+        });
     </script>
-</head><!--/head-->
+</head>
+<!--/head-->
+
 <body>
-<div id="preloader"></div>
+    <div id="preloader"></div>
     <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
-    <div id="search-wrapper">
-        <div class="container">
-            <input id="search-box" placeholder="Search">
+        <div id="search-wrapper">
+            <div class="container">
+                <input id="search-box" placeholder="Search">
+            </div>
         </div>
-    </div>
-    </div>
+        </div>
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html"><h1><span class="pe-7s-gleam bounce-in"></span> IMPACT</h1></a>
+                <a class="navbar-brand" href="index.html">
+                    <h1><span class="pe-7s-gleam bounce-in"></span> IMPACT</h1>
+                </a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -76,7 +87,8 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i
+                                class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="career.html">Career</a></li>
                             <li><a href="blog-item.html">Blog Single</a></li>
@@ -94,7 +106,8 @@
                 </ul>
             </div>
         </div>
-    </header><!--/header-->
+    </header>
+    <!--/header-->
 
     <section id="single-page-slider" class="no-margin">
         <div class="carousel slide" data-ride="carousel">
@@ -111,10 +124,14 @@
                             </div>
                         </div>
                     </div>
-                </div><!--/.item-->
-            </div><!--/.carousel-inner-->
-        </div><!--/.carousel-->
-    </section><!--/#main-slider-->
+                </div>
+                <!--/.item-->
+            </div>
+            <!--/.carousel-inner-->
+        </div>
+        <!--/.carousel-->
+    </section>
+    <!--/#main-slider-->
 
     <div id="content-wrapper">
         <section id="about-us" class="white">
@@ -122,44 +139,103 @@
                 <div class="gap"></div>
                 <div class="row">
                     <div class="col-md-12 fade-up">
-                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                        <p>​​​​​The group works on a range of research topics, from understanding cognitive processes to
+                            perception-based engineering. The human understanding is derived and finds applications in
+                            domains such as serious games, empathy, neuroeconomics, (non)clinical assistive systems,
+                            urban planning interfaces, human intelligence, visual system & color and design of
+                            sensors.Spanning fundamental research to applied, the endeavor is to develop perceptive
+                            cognitive systems for positive social impact.
+                        </p>
 
-                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                        <p> The serious games research focuses designing and developing software/hardware for
+                            visuo-motor rehabilitation post-stroke, spinal-cord injuries or any motor related
+                            degeneration. Systems validated by clinical tests are technology transferred to companies
+                            and have reached market. Models of spine-kinematics for Indian population as a function of
+                            body-mass and physical activity-level is being measured using motion-capture technique. The
+                            models will be used to build feedback mechanism for virtual agent assisted physical therapy
+                            in-addition to clinical use. The group also conducts research using games to understand
+                            human behavior in urban-life choices, driver behavior/traffic flow and financial
+                            risk-taking.
+                        </p>
+
+                        <p><i>Seeking funds : The goal is to design and develop extremely low-cost neurorehab
+                                assistive
+                                systems to deploy in smaller towns and villages with remote data/diagnosis.</i></p>
+
+                        <p>Neuroeconomoics research looks at risk-taking propensity and decision-making skills in
+                            financial transactions. Inhouse games applications are designed and developed in addition to
+                            applying traditional games like roulette wheel and centipede. Decision-making in
+                            personal/financial situations in urban-life choices is being studied using simulation games
+                            emulating real-life Health effects due to pollution, water levels and quality-of-life index.
+                            In general the role of trust, risk intelligence, situational factors, gender, education
+                            domain and emotion are of interest.</p>
+
+                        <p>Objectification, empathy and violence on the female population is being studied at the
+                            neural
+                            (brain scanning) and behavioural (eye tracking, physiological) level. The aim is to
+                            understand factors such as socio-cultrual stereotyping and individual propensity for
+                            violence for example. Functional magnetic resonance imaging, EEG, skin conductance and eye
+                            tracking techniques are used to collect brain and behaviour responses using unique stimuli.
+                        </p>
+
+                        <p>Plasticity during stroke recovery is analyzed using EEG technique and controlled motor
+                            actions. Here, we are also testing the effectiveness of using serious games for accelerating
+                            recover. </p>
+
+                        <p>Low cost compact system to measure a number of eye related conditions - for example:
+                            amblyopia, strabismus, Ametropia, pupillometry and color vision.
+                        </p>
+                        <p>Fundamental research on the visual system covers color perception and human-eye sensitively
+                            to high glare with focus on vehicle driver motor responses to high-beams.</p>
+
+                        <p>Analytic reasoning gauged from fluid intelligence metrics and correlation to cognitive
+                            thinking styles is being pursued with special focus on role of education stream – STEM, fine
+                            arts, social sciences.
+                        </p>
+
+                        <p>Prior studies included measuring the concept of ‘ quiet-eye’ and strategy as applied in
+                            badminton and caroom. Eye tracking was used to study scan/gaze differences of professional
+                            players and amateurs.
+                        </p>
                     </div>
                     <div class="col-md-4 fade-up">
 
                     </div>
                 </div>
-               <div class="gap"></div>
+                <div class="gap"></div>
                 <div class="row fade-up">
                     <div class="col-md-6">
                         <div class="testimonial-list-item">
-                        <img class="pull-left img-responsive quote-author-list" src="http://placehold.it/400x400">
+                            <img class="pull-left img-responsive quote-author-list" src="http://placehold.it/400x400">
                             <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                                </p>
                                 <small>Manager at <cite title="Source Title">Company</cite></small>
                             </blockquote>
                         </div>
                         <div class="testimonial-list-item">
-                        <img class="pull-left img-responsive quote-author-list" src="http://placehold.it/400x400">
+                            <img class="pull-left img-responsive quote-author-list" src="http://placehold.it/400x400">
                             <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                                </p>
                                 <small>Manager at <cite title="Source Title">Company</cite></small>
                             </blockquote>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="testimonial-list-item">
-                        <img class="pull-left img-responsive quote-author-list" src="http://placehold.it/400x400">
+                            <img class="pull-left img-responsive quote-author-list" src="http://placehold.it/400x400">
                             <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                                </p>
                                 <small>Manager at <cite title="Source Title">Company</cite></small>
                             </blockquote>
                         </div>
                         <div class="testimonial-list-item">
-                        <img class="pull-left img-responsive quote-author-list" src="http://placehold.it/400x400">
+                            <img class="pull-left img-responsive quote-author-list" src="http://placehold.it/400x400">
                             <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                                </p>
                                 <small>Manager at <cite title="Source Title">Company</cite></small>
                             </blockquote>
                         </div>
@@ -177,46 +253,67 @@
                 <div id="meet-the-team" class="row">
                     <div class="col-md-3 col-xs-6">
                         <div class="center team-member">
-                            <img class="img-responsive img-thumbnail bounce-in" src="http://placehold.it/400x400" alt="">
+                            <img class="img-responsive img-thumbnail bounce-in" src="http://placehold.it/400x400"
+                                alt="">
                             <div class="team-content fade-up">
                                 <h5>Daniel Jones<small class="role muted">Web Design</small></h5>
                                 <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a
+                                    class="btn btn-social btn-google-plus" href="#"><i
+                                        class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter"
+                                    href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin"
+                                    href="#"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-3 col-xs-6">
                         <div class="center team-member">
-                            <img class="img-responsive img-thumbnail bounce-in" src="http://placehold.it/400x400" alt="">
+                            <img class="img-responsive img-thumbnail bounce-in" src="http://placehold.it/400x400"
+                                alt="">
                             <div class="team-content fade-up">
                                 <h5>John Smith<small class="role muted">Marketing Director</small></h5>
                                 <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a
+                                    class="btn btn-social btn-google-plus" href="#"><i
+                                        class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter"
+                                    href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin"
+                                    href="#"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-xs-6">
                         <div class="center team-member">
-                            <img class="img-responsive img-thumbnail bounce-in" src="http://placehold.it/400x400" alt="">
+                            <img class="img-responsive img-thumbnail bounce-in" src="http://placehold.it/400x400"
+                                alt="">
                             <div class="team-content fade-up">
                                 <h5>Dave Gorman<small class="role muted">Web Design</small></h5>
                                 <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a
+                                    class="btn btn-social btn-google-plus" href="#"><i
+                                        class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter"
+                                    href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin"
+                                    href="#"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-xs-6">
                         <div class="center team-member">
-                            <img class="img-responsive img-thumbnail bounce-in" src="http://placehold.it/400x400" alt="">
+                            <img class="img-responsive img-thumbnail bounce-in" src="http://placehold.it/400x400"
+                                alt="">
                             <div class="team-content fade-up">
                                 <h5>Steve Smith<small class="role muted">Sales Assistant</small></h5>
                                 <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a
+                                    class="btn btn-social btn-google-plus" href="#"><i
+                                        class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter"
+                                    href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin"
+                                    href="#"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
-                </div><!--/#meet-the-team-->
+                </div>
+                <!--/#meet-the-team-->
                 <div class="gap"></div>
                 <div class="gap"></div>
             </div>
@@ -229,8 +326,10 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6 about-us-widget">
                         <h4>Global Coverage</h4>
-                        <p>Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin.</p>
-                    </div><!--/.col-md-3-->
+                        <p>Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried
+                            for way joy wrote witty. In mr began music weeks after at begin.</p>
+                    </div>
+                    <!--/.col-md-3-->
 
                     <div class="col-md-3 col-sm-6">
                         <h4>Company</h4>
@@ -242,7 +341,8 @@
                                 <li><a href="#">Our Services</a></li>
                             </ul>
                         </div>
-                    </div><!--/.col-md-3-->
+                    </div>
+                    <!--/.col-md-3-->
 
                     <div class="col-md-3 col-sm-6">
                         <h4>Latest Articles</h4>
@@ -266,7 +366,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!--/.col-md-3-->
+                    </div>
+                    <!--/.col-md-3-->
 
                     <div class="col-md-3 col-sm-6">
                         <h4>Come See Us</h4>
@@ -276,25 +377,30 @@
                             New York, 215648<br>
                             <abbr title="Phone"><i class="fa fa-phone"></i></abbr> 546 840654 05
                         </address>
-                    </div> <!--/.col-md-3-->
+                    </div>
+                    <!--/.col-md-3-->
                 </div>
             </div>
-        </section><!--/#bottom-->
+        </section>
+        <!--/#bottom-->
 
         <footer id="footer" class="">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8">
-                        &copy; 2019 Your Site Name. All Rights Reserved. <a href="https://templatemag.com/bootstrap-templates/">Bootstrap templates</a> by TemplateMag.
+                        &copy; 2019 Your Site Name. All Rights Reserved. <a
+                            href="https://templatemag.com/bootstrap-templates/">Bootstrap templates</a> by TemplateMag.
                     </div>
                     <div class="col-sm-4">
                         <ul class="pull-right">
-                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
+                            <!--#gototop-->
                         </ul>
                     </div>
                 </div>
             </div>
-        </footer><!--/#footer-->
+        </footer>
+        <!--/#footer-->
     </div>
 
     <script src="js/bootstrap.min.js"></script>
@@ -302,4 +408,5 @@
     <script src="js/plugins.js"></script>
     <script src="js/init.js"></script>
 </body>
+
 </html>
