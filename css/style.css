@@ -1988,12 +1988,12 @@ img.author-box-image {
     margin-bottom: 10px;
 }
 
-.item blockquote p:before {
+/* .item blockquote p:before {
     content: "\f10d";
     font-family: Fontawesome;
     float: left;
     margin-right: 10px;
-}
+} */
 
 .testimonial-list-item:hover blockquote {
     border-left: 4px solid #00b29e;
