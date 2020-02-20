@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,37 +21,43 @@
     <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
 
     <script type="text/javascript">
-    jQuery(document).ready(function($){
-	'use strict';
-      	jQuery('body').backstretch([
-	        "images/bg/bg1.jpg",
-	        "images/bg/bg2.jpg",
-	        "images/bg/bg3.jpg"
-	    ], {duration: 8000, fade: 1500, centeredY: true });
+        jQuery(document).ready(function ($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "images/bg/bg1.jpg",
+                "images/bg/bg2.jpg",
+                "images/bg/bg3.jpg"
+            ], { duration: 8000, fade: 1500, centeredY: true });
 
-		$("#mapwrapper").gMap({ controls: false,
-         	scrollwheel: false,
-         	markers: [{
-              	latitude:40.7566,
-				longitude: -73.9863,
-          	icon: { image: "images/marker.png",
-              	iconsize: [44,44],
-          		iconanchor: [12,46],
-          		infowindowanchor: [12, 0] } }],
-          	icon: {
-              	image: "images/marker.png",
-             	iconsize: [26, 46],
-              	iconanchor: [12, 46],
-              	infowindowanchor: [12, 0] },
-         	latitude:40.7566,
-         	longitude: -73.9863,
-          	zoom: 14 });
-    });
+            $("#mapwrapper").gMap({
+                controls: false,
+                scrollwheel: false,
+                markers: [{
+                    latitude: 40.7566,
+                    longitude: -73.9863,
+                    icon: {
+                        image: "images/marker.png",
+                        iconsize: [44, 44],
+                        iconanchor: [12, 46],
+                        infowindowanchor: [12, 0]
+                    }
+                }],
+                icon: {
+                    image: "images/marker.png",
+                    iconsize: [26, 46],
+                    iconanchor: [12, 46],
+                    infowindowanchor: [12, 0]
+                },
+                latitude: 40.7566,
+                longitude: -73.9863,
+                zoom: 14
+            });
+        });
     </script>
 </head>
 
 <body>
-<div id="preloader"></div>
+    <div id="preloader"></div>
     <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
         <div class="container">
             <div class="navbar-header">
@@ -59,7 +66,9 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <!-- <span class="pe-7s-gleam bounce-in"></span> -->
-                 <a class="navbar-brand" href="#main-slider"><h1>P.E.G. | IIIT-H</h1></a>
+                <a class="navbar-brand" href="#main-slider">
+                    <h1>P.E.G. | IIIT-H</h1>
+                </a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -72,7 +81,8 @@
                 </ul>
             </div>
         </div>
-    </header><!--/header-->
+    </header>
+    <!--/header-->
 
     <section id="main-slider" class="no-margin">
         <div class="carousel slide" data-ride="carousel">
@@ -82,24 +92,30 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="carousel-content center centered">
-                                    <br/>
-                                    <h2 class="boxed animation animated-item-1 fade-down">Perception Engineering Group</h2>
-                                    <p class="boxed animation animated-item-2 fade-up">Cognitive Sciences Laboratory, IIIT Hyderabad</p>
+                                    <br />
+                                    <h2 class="boxed animation animated-item-1 fade-down">Perception Engineering Group
+                                    </h2>
+                                    <p class="boxed animation animated-item-2 fade-up">Cognitive Sciences Laboratory,
+                                        IIIT Hyderabad</p>
                                     <br>
                                     <a class="btn btn-md animation bounce-in" href="#services">Learn More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div><!--/.item-->
-            </div><!--/.carousel-inner-->
-        </div><!--/.carousel-->
-    </section><!--/#main-slider-->
+                </div>
+                <!--/.item-->
+            </div>
+            <!--/.carousel-inner-->
+        </div>
+        <!--/.carousel-->
+    </section>
+    <!--/#main-slider-->
 
     <div id="content-wrapper">
         <section id="services" class="white">
             <div class="container">
-            <div class="gap"></div>
+                <div class="gap"></div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="center gap fade-down section-heading">
@@ -111,62 +127,75 @@
                 </div>
 
                 <div class="row">
-                    <a  href="images/portfolio/serious-games.png" rel="prettyPhoto">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-block">
-                            <div class="pull-left bounce-in">
-                                <i class="fa fa-gamepad fa fa-md"></i>
-                            </div>
-                            <div class="media-body fade-up">
-                                <h3 class="media-heading">Serious Games</h3>
-                                <p>The serious games research focuses designing and developing software/hardware for visuo-motor rehabilitation post-stroke, spinal-cord injuries or any motor related degeneration.</p>
+                    <a href="images/portfolio/serious-games.png" rel="prettyPhoto">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-gamepad fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading">Serious Games</h3>
+                                    <p>The serious games research focuses designing and developing software/hardware for
+                                        visuo-motor rehabilitation post-stroke, spinal-cord injuries or any motor
+                                        related degeneration.</p>
+                                </div>
                             </div>
                         </div>
-                    </div><!--/.col-md-4-->
+                        <!--/.col-md-4-->
                     </a>
-                    <a  href="images/portfolio/neuroeconomics.png" rel="prettyPhoto">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-block">
-                            <div class="pull-left bounce-in">
-                                <i class="fa fa-coins fa fa-md"></i>
-                            </div>
-                            <div class="media-body fade-up">
-                                <h3 class="media-heading">Neuroeconomics</h3>
-                                <p>Neuroeconomics research looks at risk-taking propensity and decision-making skills in financial transactions. Inhouse games applications are designed and developed in addition to applying traditional games.</p>
+                    <a href="images/portfolio/neuroeconomics.png" rel="prettyPhoto">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-coins fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading">Neuroeconomics</h3>
+                                    <p>Neuroeconomics research looks at risk-taking propensity and decision-making
+                                        skills in financial transactions. Inhouse games applications are designed and
+                                        developed in addition to applying traditional games.</p>
+                                </div>
                             </div>
                         </div>
-                    </div><!--/.col-md-4-->
+                        <!--/.col-md-4-->
+                    </a>
+                    <a href="images/portfolio/empathy.jpg" rel="prettyPhoto">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-heart fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading">Empathy</h3>
+                                    <p>Objectification, empathy and violence on the female population is being studied
+                                        at the neural (brain scanning) and behavioural (eye tracking, physiological)
+                                        level.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                </div>
+                <!--/.row-->
                 </a>
-                <a  href="images/portfolio/empathy.jpg" rel="prettyPhoto">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-block">
-                            <div class="pull-left bounce-in">
-                                <i class="fa fa-heart fa fa-md"></i>
-                            </div>
-                            <div class="media-body fade-up">
-                                <h3 class="media-heading">Empathy</h3>
-                                <p>Objectification, empathy and violence on the female population is being studied at the neural (brain scanning) and behavioural (eye tracking, physiological) level.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                </div><!--/.row-->
-            </a>
-            <a  href="images/portfolio/intelligence.jpg" rel="prettyPhoto">
-                <div class="gap"></div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-block">
-                            <div class="pull-left bounce-in">
-                                <i class="fa fa-brain fa fa-md"></i>
-                            </div>
-                            <div class="media-body fade-up">
-                                <h3 class="media-heading">Fluid Intelligence</h3>
-                                <p>Analytic reasoning  gauged from fluid intelligence metrics and correlation to cognitive thinking styles is being pursued with special focus on role of education stream – STEM, fine arts, social sciences. </p>
+                <a href="images/portfolio/intelligence.jpg" rel="prettyPhoto">
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-brain fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading">Fluid Intelligence</h3>
+                                    <p>Analytic reasoning gauged from fluid intelligence metrics and correlation to
+                                        cognitive thinking styles is being pursued with special focus on role of
+                                        education stream – STEM, fine arts, social sciences. </p>
+                                </div>
                             </div>
                         </div>
-                    </div><!--/.col-md-4-->
+                        <!--/.col-md-4-->
                 </a>
-                <a  href="images/portfolio/color.jpg" rel="prettyPhoto">
+                <a href="images/portfolio/color.jpg" rel="prettyPhoto">
                     <div class="col-md-4 col-sm-6">
                         <div class="service-block">
                             <div class="pull-left bounce-in">
@@ -174,12 +203,15 @@
                             </div>
                             <div class="media-body fade-up">
                                 <h3 class="media-heading">Colour Perception</h3>
-                                <p>Fundamental research on the visual system covers color  perception and human-eye sensitively to high glare with focus on vehicle driver motor responses to high-beams.                                    </p>
+                                <p>Fundamental research on the visual system covers color perception and human-eye
+                                    sensitively to high glare with focus on vehicle driver motor responses to
+                                    high-beams. </p>
                             </div>
                         </div>
-                    </div><!--/.col-md-4-->
+                    </div>
+                    <!--/.col-md-4-->
                 </a>
-                <a  href="images/portfolio/eye.jpg" rel="prettyPhoto">
+                <a href="images/portfolio/eye.jpg" rel="prettyPhoto">
                     <div class="col-md-4 col-sm-6">
                         <div class="service-block">
                             <div class="pull-left bounce-in">
@@ -187,89 +219,91 @@
                             </div>
                             <div class="media-body fade-up">
                                 <h3 class="media-heading">Eye Measurement Systems</h3>
-                                <p>Low cost compact system to measure a number of eye related conditions - for example: amblyopia, strabismus, Ametropia, pupillometry and color vision.</p>
+                                <p>Low cost compact system to measure a number of eye related conditions - for example:
+                                    amblyopia, strabismus, Ametropia, pupillometry and color vision.</p>
                             </div>
                         </div>
-                    </div><!--/.col-md-4-->
-                    </a>
-                </div><!--/.row-->
+                    </div>
+                    <!--/.col-md-4-->
+                </a>
             </div>
-        </section>
+            <!--/.row-->
+    </div>
+    </section>
 
 
-		<section id="single-quote" class="divider-section">
-	            <div class="container">
-	            	<div class="gap"></div>
-	                <div class="row">
-	                    <div class='col-md-offset-2 col-md-8 fade-up'>
-	                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-	                            <div class="carousel-inner">
-	                                <div class="item active">
-	                                    <blockquote>
-	                                        <div class="row">
-	                                            <!-- <div class="col-sm-3 text-center">
+    <section id="single-quote" class="divider-section">
+        <div class="container">
+            <div class="gap"></div>
+            <div class="row">
+                <div class='col-md-offset-2 col-md-8 fade-up'>
+                    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <blockquote>
+                                    <div class="row">
+                                        <!-- <div class="col-sm-3 text-center">
 	                                                <img class="img-responsive" src="images/team/kavita.jpg" style="width: 100px;height:100px;">
 	                                            </div>
 	                                            <div class="col-sm-9">
 	                                                <p>Kavita Vemuri, PhD - Assistant Professor, IIIT Hyderabad</p>
 	                                                <small>Cognitive neuroscience of empathy, game design and engineering, innovation and entrepreneurship, fiber optic and liquid crystal devices for optical communications and sensors, control systems</small>
 	                                            </div> -->
-	                                        </div>
-	                                    </blockquote>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="gap"></div>
-	      		</div>
-  		</section>
-
-        <section id="about-us" class="white">
-        	<div class="container">
-	            <div class="gap"></div>
-	            <div class="row">
-	                <div class="col-md-12">
-	                    <div class="center gap fade-down section-heading">
-	                        <h2 class="main-title">About Us</h2>
-	                        <hr>
-	                        <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="row">
-	                <div class="col-md-10 col-md-offset-1 fade-up">
-	                    <p>​​​​​The group works on a range of research topics, from understanding cognitive processes to
-                            perception-based engineering. The human understanding is derived and finds applications in
-                            domains such as serious games, empathy, neuroeconomics, (non)clinical assistive systems,
-                            urban planning interfaces, human intelligence, visual system & color and design of
-                            sensors.Spanning fundamental research to applied, the endeavor is to develop perceptive
-                            cognitive systems for positive social impact.
-                        </p>
-                        <p>Besides the research areas mentioned above, the group also works on plasticity during stroke recovery, which is analyzed using EEG technique and controlled motor
-                            actions. Here, we are also testing the effectiveness of using serious games for accelerating
-                            recover. While prior studies included measuring the concept of ‘ quiet-eye’ and strategy as applied in
-                            badminton and carrom. Eye tracking was used to study scan/gaze differences of professional
-                            players and amateurs.
-                        </p>
-                        <p><i><b>Seeking funds :</b> The goal is to design and develop extremely low-cost neurorehab
-                            assistive
-                            systems to deploy in smaller towns and villages with remote data/diagnosis.</i></p>
-	                </div>
-	                <div class="col-md-4 fade-up">
-
-	                </div>
-	            </div>
-               
-	            <div class="gap"></div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="stats" class="divider-section">
             <div class="gap"></div>
-            <div class="container">
-                <div class="row">
-                    <!-- <div class="col-md-3 col-xs-6">
+        </div>
+    </section>
+
+    <section id="about-us" class="white">
+        <div class="container">
+            <div class="gap"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="main-title">About Us</h2>
+                        <hr>
+                        <!-- <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 fade-up">
+                    <p>​​​​​The group works on a range of research topics, from understanding cognitive processes to
+                        perception-based engineering. The human understanding is derived and finds applications in
+                        domains such as serious games, empathy, neuroeconomics, (non)clinical assistive systems,
+                        urban planning interfaces, human intelligence, visual system & color and design of
+                        sensors.Spanning fundamental research to applied, the endeavor is to develop perceptive
+                        cognitive systems for positive social impact.
+                    </p>
+                    <p>Besides the research areas mentioned above, the group also works on plasticity during stroke
+                        recovery, which is analyzed using EEG technique and controlled motor
+                        actions. Here, we are also testing the effectiveness of using serious games for accelerating
+                        recover. While prior studies included measuring the concept of ‘ quiet-eye’ and strategy as
+                        applied in
+                        badminton and carrom. Eye tracking was used to study scan/gaze differences of professional
+                        players and amateurs.
+                    </p>
+                </div>
+                <div class="col-md-4 fade-up">
+
+                </div>
+            </div>
+
+            <div class="gap"></div>
+        </div>
+    </section>
+
+    <section id="stats" class="divider-section">
+        <div class="gap"></div>
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-3 col-xs-6">
                         <div class="center bounce-in">
                             <span class="stat-icon"><span class="pe-7s-timer bounce-in"></span></span>
                             <h1><span class="counter">246000</span></h1>
@@ -297,348 +331,504 @@
                             <h3>THINGS IN BOXES</h3>
                         </div>
                     </div> -->
+            </div>
+        </div>
+        <div class="gap"></div>
+    </section>
+
+    <section id="team" class="white">
+        <div class="center gap fade-down section-heading">
+            <h2 class="main-title">The Team</h2>
+            <hr>
+        </div>
+        <div class="gap"></div>
+        <div id="meet-the-team" class="row">
+            <div class="col-md-2 col-xs-3"></div>
+
+            <div class="col-md-2 col-xs-6">
+                <div class="center team-member">
+                    <div class="team-image">
+                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/kavita.jpg" alt="">
+                    </div>
+                    <div class="team-content fade-up">
+                        <h5>Kavita Vemuri, PhD<small class="role muted">Assistant Professor</small></h5>
+                        <p>Cognitive neuroscience of empathy, game design and engineering, innovation and
+                            entrepreneurship, fiber optic and liquid crystal devices for optical communications and
+                            sensors, control systems</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-xs-6">
+                <div class="center team-member">
+                    <div class="team-image">
+                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/sravya.jpg" alt="">
+                    </div>
+                    <div class="team-content fade-up">
+                        <h5>Sravya Varma<small class="role muted">Graduate Researcher</small></h5>
+                        <p>Analysing the differentials in logical deduction and rule induction process applied by visual
+                            arts (fine arts) and engineering trained students on the standard Raven Progressive
+                            Matrices.</p>
+
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.linkedin.com/in/sai-srinivas-24b1a1189" target="_blank">
+                <div class="col-md-2 col-xs-6">
+                    <div class="center team-member">
+                        <div class="team-image">
+                            <img class="img-responsive img-thumbnail bounce-in" src="images/team/srinivas.jpg" alt="">
+                        </div>
+                        <div class="team-content fade-up">
+                            <h5>Srinivas Sree<small class="role muted">Graduate Researcher</small></h5>
+                            <p>Building and testing low-cost virtual reality HMD for vision sciences – specifically
+                                focusing on diagnostics/ intervention for amblyopia, strabismus.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="col-md-2 col-xs-6">
+                <div class="center team-member">
+                    <div class="team-image">
+                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/chaitanya.jpg" alt="">
+                    </div>
+                    <div class="team-content fade-up">
+                        <h5>Petluri Chaitanya<small class="role muted">Graduate Researcher</small></h5>
+                        <p>Using game interface to study financial/health-related decision making processes. An unique
+                            urban growth simulation with realistic conditions is designed & implemented to study
+                            individual/collective behaviours.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-3"></div>
+        </div>
+        <!--/#meet-the-team-->
+        <div class="gap"></div>
+
+        <div id="meet-the-team" class="row">
+            <div class="col-md-2 col-xs-3"></div>
+
+            <div class="col-md-2 col-xs-6">
+                <div class="center team-member">
+                    <div class="team-image">
+                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/srija.jpg" alt="">
+                    </div>
+                    <div class="team-content fade-up">
+                        <h5>Srija Bhupathiraju<small class="role muted">Graduate Researcher</small></h5>
+                        <p>Objectification of women as a function of attire and influence of exploitative dance
+                            sequences in commercial cinema.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <div class="center team-member">
+                    <div class="team-image">
+                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/dhiraj.jpg" alt="">
+                    </div>
+                    <div class="team-content fade-up">
+                        <h5>Dhiraj Jagadale<small class="role muted">Graduate Researcher</small></h5>
+                        <p>Trust based on inter-personal familiarity, source of information and on algorithms is being
+                            examined using economic and financial games.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <div class="center team-member">
+                    <div class="team-image">
+                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/shubhi.jpg" alt="">
+
+                    </div>
+                    <div class="team-content fade-up">
+                        <h5>Shubhangi Gautam<small class="role muted">Graduate Researcher</small></h5>
+                        <p>Investigating the Functional and effective connectivity of resting & task default mode
+                            networks from fMRI data collected while watching emotional movie clips.</p>
+
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.linkedin.com/in/arhant-jain-399540143/" target="_blank">
+                <div class="col-md-2 col-xs-6">
+                    <div class="center team-member">
+                        <div class="team-image">
+                            <img class="img-responsive img-thumbnail bounce-in" src="images/team/arhant.jpg" alt="">
+                        </div>
+                        <div class="team-content fade-up">
+                            <h5>Arhant Jain<small class="role muted">Undergrad Researcher</small></h5>
+                            <p>Motor recovery post-stroke and role of neural plasticity. EEG data collected using
+                                standard and modified finger-tapping experiments in healthy and stroke patients.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="col-md-2 col-xs-3"></div>
+        </div>
+        <!--/#meet-the-team-->
+        <div class="gap"></div>
+
+        <div id="meet-the-team" class="row">
+            <div class="col-md-2 col-xs-3"></div>
+            <a href="http://vivekkaushal.com" target="_blank">
+                <div class="col-md-2 col-xs-6">
+                    <div class="center team-member">
+                        <div class="team-image">
+                            <img class="img-responsive img-thumbnail bounce-in" src="images/team/vivek.jpg" alt="">
+                        </div>
+                        <div class="team-content fade-up">
+                            <h5>Vivek Kaushal<small class="role muted">Undergrad Researcher</small></h5>
+                            <p>The differences in attention and comprehension of news articles with
+                                clickbait and advertisements</p>
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="col-md-2 col-xs-6">
+                <div class="center team-member">
+                    <div class="team-image">
+                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/supreeth.png" alt="">
+                    </div>
+                    <div class="team-content fade-up">
+                        <h5>Supreeth Menon<small class="role muted">Undergrad Researcher</small></h5>
+                        <p>Spine Kinematics modelling with data collected using Motion Capture system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-xs-6">
+                <div class="center team-member">
+                    <div class="team-image">
+                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/namratha.jpg" alt="">
+
+                    </div>
+                    <div class="team-content fade-up">
+                        <h5>Namratha Gopalabhatla<small class="role muted">Undergrad Researcher</small></h5>
+                        <p>Wearable sensors for muscle and knee bone health as physiological bio markers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <div class="center team-member">
+                    <div class="team-image">
+                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/harsh.jpg" alt="">
+                    </div>
+                    <div class="team-content fade-up">
+                        <h5>Harsh Sharma<small class="role muted">Undergrad Researcher</small></h5>
+                        <p>Spine Kinematics modelling with data collected using Motion Capture system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-xs-3"></div>
+        </div>
+
+
+        <!-- New Row -->
+        <div id="meet-the-team" class="row">
+            <div class="col-md-2 col-xs-3"></div>
+
+            <div class="col-md-2 col-xs-6">
+                <div class="center team-member">
+                    <div class="team-image">
+                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/sagrika.jpg" alt="">
+
+                    </div>
+                    <div class="team-content fade-up">
+                        <h5>Sagrika Nagar<small class="role muted">Undergrad Researcher</small></h5>
+                        <p>Wearable sensors for muscle and knee bone health as physiological bio markers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <div class="center team-member">
+                    <div class="team-image">
+                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/deepti.jpg" alt="">
+                    </div>
+                    <div class="team-content fade-up">
+                        <h5>Deepti Mahesh<small class="role muted">Undergrad Researcher</small></h5>
+                        <p>Correlating visual attention and focal or field-of-view to prediction of action by drivers in
+                            Indian road conditions. Field data collected using head mounted eye trackers in naturalistic
+                            driving conditions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <div class="center team-member">
+                    <div class="team-image">
+                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/ayushi.jpg" alt="">
+                    </div>
+                    <div class="team-content fade-up">
+                        <h5>Ayushi Agarawal<small class="role muted">Doctoral Researcher</small></h5>
+                        <p>The role of alcohol on cognitive control as applicable to violence against women. Includes
+                            both behavioural and neuroimaging studies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-xs-3"></div>
+        </div>
+
+    </section>
+
+    <section id="testimonial-carousel" class="divider-section">
+        <div class="gap"></div>
+        <div class="container">
+            <div class="row">
+                <div class="center gap fade-down section-heading">
+                    <h2 class="main-title">Collaborations and Funding</h2>
+                    <hr>
+                    <div class="gap"></div>
+                </div>
+                <div class='col-md-offset-2 col-md-8 fade-up'>
+                    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                        <!-- Bottom Carousel Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#quote-carousel" data-slide-to="1"></li>
+                            <li data-target="#quote-carousel" data-slide-to="2"></li>
+                            <li data-target="#quote-carousel" data-slide-to="3"></li>
+                            <li data-target="#quote-carousel" data-slide-to="4"></li>
+                            <li data-target="#quote-carousel" data-slide-to="5"></li>
+                            <li data-target="#quote-carousel" data-slide-to="6"></li>
+                        </ol>
+                        <!-- Carousel Slides / Quotes -->
+                        <div class="carousel-inner">
+                            <!-- Quote 1 -->
+                            <div class="item active">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-6 text-center">
+                                            <img class="img-responsive" src="images/logo/uon.png"
+                                                style="width: 200px;height:200px;">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Colour Perception Lab,<br />University of Nevada, Reno</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Quote 2 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-6 text-center">
+                                            <img class="img-responsive" src="images/logo/uoh.png"
+                                                style="width: 200px;height:200px;">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>School of Medical Sciences, <br /> University of Hyderabad</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-6 text-center">
+                                            <img class="img-responsive" src="images/logo/iimb.jpg"
+                                                style="width: 200px;height:200px;">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Behavioural Economics,<br />IIM, Bangalore</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Quote 3 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-6 text-center">
+                                            <img class="img-responsive" src="images/logo/dst.jpg"
+                                                style="width: 200px;height:200px;">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Department of Science and Technology,<br />Government of India</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-6 text-center">
+                                            <img class="img-responsive" src="images/logo/dit.jpg"
+                                                style="width: 200px;height:200px;">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Department of Information Technology,<br />Government of India</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-6 text-center">
+                                            <img class="img-responsive" src="images/logo/arc.jpg"
+                                                style="width: 200px;height:200px;">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Anurag Rehabilitation Centre, <br />Hyderabad</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-6 text-center">
+                                            <img class="img-responsive" src="images/logo/soujhe.jpg"
+                                                style="width: 200px;height:200px;">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Technology Transfer to Startup,<br />Soujhe</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="gap"></div>
-        </section>
-
-        <section id="team" class = "white">
-                <div class="center gap fade-down section-heading">
-                        <h2 class="main-title">The Team</h2>
-                        <hr>
-                    </div>
-                    <div class="gap"></div>
-                    <div id="meet-the-team" class="row">
-                        <div class="col-md-4 col-xs-3"></div>
-                        
-                        <div class="col-md-4 col-xs-6">
-                            <div class="center team-member">
-                                <div class="team-image">
-                                    <img class="img-responsive img-thumbnail bounce-in" src="images/team/kavita.jpg" alt="">
-                                </div>
-                                <div class="team-content fade-up">
-                                    <h5>Kavita Vemuri, PhD<small class="role muted">Assistant Professor</small></h5>
-                                    <p>Cognitive neuroscience of empathy, game design and engineering, innovation and entrepreneurship, fiber optic and liquid crystal devices for optical communications and sensors, control systems</p>
-                                                
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--/#meet-the-team-->
-                    <div class="gap"></div>
-    
-                    <div id="meet-the-team" class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-2 col-xs-6">
-                                    <div class="center team-member">
-                                        <div class="team-image">
-                                            <img class="img-responsive img-thumbnail bounce-in" src="images/team/team01.jpg" alt="">
-    
-                                        </div>
-                                        <div class="team-content fade-up">
-                                            <h5>Petluri Chaitanya<small class="role muted">Graduate Researcher</small></h5>
-                                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-    
-                        <div class="col-md-2 col-xs-6">
-                            <div class="center team-member">
-                                <div class="team-image">
-                                    <img class="img-responsive img-thumbnail bounce-in" src="images/team/team02.jpg" alt="">
-                                </div>
-                                <div class="team-content fade-up">
-                                    <h5>Srija Bhupathiraju<small class="role muted">Graduate Researcher</small></h5>
-                                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-xs-6">
-                            <div class="center team-member">
-                                <div class="team-image">
-                                    <img class="img-responsive img-thumbnail bounce-in" src="images/team/sravya.jpg" alt="">
-                                </div>
-                                <div class="team-content fade-up">
-                                    <h5>Sravya Varma<small class="role muted">Graduate Researcher</small></h5>
-                                    <p>Analytical and problem solving abilities among people with varying thinking styles.</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="https://www.linkedin.com/in/sai-srinivas-24b1a1189" target ="_blank">
-                        <div class="col-md-2 col-xs-6">
-                            <div class="center team-member">
-                                <div class="team-image">
-                                    <img class="img-responsive img-thumbnail bounce-in" src="images/team/srinivas.jpg" alt="">
-                                </div>
-                                <div class="team-content fade-up">
-                                    <h5>Srinivas Sree<small class="role muted">Graduate Researcher</small></h5>
-                                    <p>Clinical study of eye condition, testing using a virtual reality display</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    </div><!--/#meet-the-team-->
-                    <div class="col-md-2"></div>
-                    <div class="gap"></div>
-                    <div id="meet-the-team" class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-2 col-xs-6">
-                                    <div class="center team-member">
-                                        <div class="team-image">
-                                            <img class="img-responsive img-thumbnail bounce-in" src="images/team/team01.jpg" alt="">
-                                        </div>
-                                        <div class="team-content fade-up">
-                                            <h5>Dhiraj Jagadale<small class="role muted">Graduate Researcher</small></h5>
-                                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            <div class="col-md-2 col-xs-6">
-                                <div class="center team-member">
-                                    <div class="team-image">
-                                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/team02.jpg" alt="">
-    
-                                    </div>
-                                    <div class="team-content fade-up">
-                                        <h5>Shubhangi Gautam<small class="role muted">Graduate Researcher</small></h5>
-                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <a href="https://www.linkedin.com/in/arhant-jain-399540143/" target ="_blank">
-                            <div class="col-md-2 col-xs-6">
-                                <div class="center team-member">
-                                    <div class="team-image">
-                                        <img class="img-responsive img-thumbnail bounce-in" src="images/team/arhant.jpg" alt="">
-                                    </div>
-                                    <div class="team-content fade-up">
-                                        <h5>Arhant Jain<small class="role muted">Undergrad Researcher</small></h5>
-                                        <p>Effect of external motivations on post stroke neuro-rehabilitation in patients</p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                            <a href="http://vivekkaushal.com" target="_blank">
-                                <div class="col-md-2 col-xs-6">
-                                    <div class="center team-member">
-                                        <div class="team-image">
-                                            <img class="img-responsive img-thumbnail bounce-in" src="images/team/vivek.jpg" alt="">
-                                        </div>
-                                        <div class="team-content fade-up">
-                                            <h5>Vivek Kaushal<small class="role muted">Undergrad Researcher</small></h5>
-                                            <p>Role of emotions and intelligence on financial risk taking | Micro-transactions</p>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="col-md-2"></div>
-                        </div><!--/#meet-the-team-->
-    
-        </section>
-        
-            <section id="testimonial-carousel" class="divider-section">
-            <div class="gap"></div>
-	            <div class="container">
-	                <div class="row">
-                    	<div class="center gap fade-down section-heading">
-                            <h2 class="main-title">Collaborations and Funding</h2>
-                            <hr>
-                            <div class="gap"></div>
-                        </div>
-	                    <div class='col-md-offset-2 col-md-8 fade-up'>
-	                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-	                            <!-- Bottom Carousel Indicators -->
-	                            <ol class="carousel-indicators">
-	                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-	                                <li data-target="#quote-carousel" data-slide-to="1"></li>
-                                    <li data-target="#quote-carousel" data-slide-to="2"></li>
-                                    <li data-target="#quote-carousel" data-slide-to="3"></li>
-                                    <li data-target="#quote-carousel" data-slide-to="4"></li>
-                                    <li data-target="#quote-carousel" data-slide-to="5"></li>
-                                    <li data-target="#quote-carousel" data-slide-to="6"></li>
-	                            </ol>
-	                            <!-- Carousel Slides / Quotes -->
-	                            <div class="carousel-inner">
-	                              <!-- Quote 1 -->
-	                                <div class="item active">
-	                                    <blockquote>
-	                                        <div class="row">
-	                                            <div class="col-sm-6 text-center">
-	                                                <img class="img-responsive" src="images/logo/uon.png" style="width: 200px;height:200px;">
-	                                            </div>
-	                                            <div class="col-sm-6">
-	                                                <p>Colour Perception Lab,<br/>University of Nevada, Reno</p>
-	                                            </div>
-	                                        </div>
-	                                    </blockquote>
-	                                </div>
-	                                <!-- Quote 2 -->
-	                                <div class="item">
-	                                    <blockquote>
-	                                        <div class="row">
-	                                            <div class="col-sm-6 text-center">
-	                                                <img class="img-responsive" src="images/logo/uoh.png" style="width: 200px;height:200px;">
-	                                            </div>
-	                                            <div class="col-sm-6">
-                                                    <p>School of Medical Sciences, <br/> University of Hyderabad</p>
-	                                            </div>
-	                                        </div>
-	                                    </blockquote>
-                                    </div>
-                                    <div class="item">
-                                            <blockquote>
-                                                <div class="row">
-                                                    <div class="col-sm-6 text-center">
-                                                        <img class="img-responsive" src="images/logo/iimb.jpg" style="width: 200px;height:200px;">
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <p>Behavioural Economics,<br/>IIM, Bangalore</p>
-                                                    </div>
-                                                </div>
-                                            </blockquote>
-                                    </div>
-	                                <!-- Quote 3 -->
-                                    <div class="item">
-	                                    <blockquote>
-	                                        <div class="row">
-	                                            <div class="col-sm-6 text-center">
-	                                                <img class="img-responsive" src="images/logo/dst.jpg" style="width: 200px;height:200px;">
-	                                            </div>
-	                                            <div class="col-sm-6">
-                                                    <p>Department of Science and Technology,<br/>Government of India</p>
-	                                            </div>
-	                                        </div>
-	                                    </blockquote>
-                                    </div>
-                                    <div class="item">
-	                                    <blockquote>
-	                                        <div class="row">
-	                                            <div class="col-sm-6 text-center">
-	                                                <img class="img-responsive" src="images/logo/dit.jpg" style="width: 200px;height:200px;">
-	                                            </div>
-	                                            <div class="col-sm-6">
-                                                    <p>Department of Information Technology,<br/>Government of India</p>
-	                                            </div>
-	                                        </div>
-	                                    </blockquote>
-                                    </div>
-                                    <div class="item">
-	                                    <blockquote>
-	                                        <div class="row">
-	                                            <div class="col-sm-6 text-center">
-	                                                <img class="img-responsive" src="images/logo/arc.jpg" style="width: 200px;height:200px;">
-	                                            </div>
-	                                            <div class="col-sm-6">
-                                                    <p>Anurag Rehabilitation Centre, <br/>Hyderabad</p>
-                                                </div>
-	                                        </div>
-	                                    </blockquote>
-                                    </div>
-                                    <div class="item">
-	                                    <blockquote>
-	                                        <div class="row">
-	                                            <div class="col-sm-6 text-center">
-	                                                <img class="img-responsive" src="images/logo/soujhe.jpg" style="width: 200px;height:200px;">
-	                                            </div>
-	                                            <div class="col-sm-6">
-                                                    <p>Technology Transfer to Startup,<br/>Soujhe</p>
-	                                            </div>
-	                                        </div>
-	                                    </blockquote>
-                                    </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="gap"></div>
-	      		</div>
-      		</section>
-
-            <section id="blog" class="white">
-                <div class="container">
-                    <div class="center gap fade-down section-heading">
-                   		<div class="gap"></div>
-                        <h2 class="main-title">Our Publications</h2>
-                        <hr>
-                        <!-- <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p> -->
-                    </div>
-                    <div class="gap"></div>
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1 fade-up">
-                            <ol>
-                                <li>Mayank Agrawal, Kavita Vemuri. Analyzing High Decibel Honking Effect on Driving Behavior Using VR and Bio-Sensors. AutomotiveUI 2019</li>
-                                <li>Sravya Vatsavayi, Priyanka Srivastava, Kavita Vemuri, Analyzing Performance Differences in Artists and Engineers- An RPM Study. Cognitive Science Society 2019,  poster presentation. </li>
-                                <li>Sravya Vatsavayi, Kavita Vemuri, 'Analysing visual search strategies in artists and engineers - An eye tracking study on RPM', International Society for Intelligence Research Conference, 2019. </li>
-                                <li>Kara J. Emery, Courtney Matera, Vicki J. Volbrecht, David H. Peterzell, Kavita Vemuri, Paul Kay, Michael A. Webster , "Categorical effects on color appearance". ICVS 2019. </li>
-                                <li>Courtney Matera, Saksham Agrawal, Siddhart Srivatsav, Kara J. Emery, Vicki J. Volbrecht, Kavita Vemuri, Paul Kay, Michael A. Webster. A new angle on hue scaling. OSA Vision 2018, Reno Nevada.</li>
-                                <li>Talia Retter, Siddhart Srivatsav, Kavita Vemuri, Michael A. Webster. Sensitivity to the number of colors in an ensemble. OSA Vision 2018, Reno, Nevada. </li>
-                                <li>Mayank Agarwal, Kavita Vemuri. A Heterogeneous Traffic Virtual-Reality Simulator to Study Irritation/Anger and Driving Behaviour under Adverse Conditions. ACM British HCI 2018. (Best Poster Award). </li>
-                                <li>Rajat Singla, Raviraja Ganta and Kavita Vemuri. An Exergame Themed on the Power of Religious Belief for Stroke/Motor Rehabilitation. ACM British HCI 2018. </li>
-                                <li>Kavita Vemuri, Akanksha Srivastava, Saksham Aggrwal, Mithra Anand. Age, pupil size differences and color choices for the “dress” and the “jacket”. JOSA A. 2018. </li>
-                                <li>Nithiyashree Upara, Aditi Mavalankar, Kavita Vemuri. Eye tracking in naturalistic badminton play — comparing visual gaze pattern strategy in world-rank and amateur player. ACM ETRA PETMEI 2018. </li>
-                                <li>Dhriti Sayesh Goyal, Kavita Vemuri. Risk-taking in Roulette Wheel – Exploring the Influence of Gender, Education stream and Co-player. Foundations for Utility and Risk, FUR 2018, University of York, UK. </li>
-                                <li>Vivek Kaushal, Dhriti Sayesh Goyal, Kavita Vemuri. Comparative study of risk-taking and academic performance. Foundations for Utility and Risk, FUR 2018, University of York, UK. </li>
-                                <li>Shristi Dang, Arunima Ved, Kavita Vemuri (2017), Comparing knowledge acquisition in jigsaw map puzzle game versus self-study. European Conference on Game Based Learning, 2017, Graz, Austria. </li>
-                                <li>Raviraja Ganta; Rohan Gupta; Rajat Singla; kavita Vemuri (2017) “Power of Belief” - a game for neuro-motor rehabilitation. 11th European Conference on Games Based Learning (ECGBL17), Graz, Austria. </li>
-                                <li>Nithiyasree Upara, Jahanavi Nukireddy, Kavita Vemuri. A new test for pattern matching intelligence for school children and performance analysis with academic grade point. International Society for Intelligence Research (ISIR) 2017, Montreal, Canada. </li>
-                                <li>Mayank Agarwal & Kavita Vemuri, Simulating and analyzing chaos of Indian Traffic Condition, 18th IRF World Road Meet 2017, New Delhi , India. </li>
-                                <li>Rohan Bhatial & Kavita Vemuri, Effect of Highbeam glare on driver response time. 18th IRF World Road Meet 2017, New Delhi , India . </li>
-                                <li>Vemuri K, Surampudi BR. 2015. Evidence of stimulus correlated empathy modes - Group ICA of fMRI data. Brain and Cogn. 94:32-43</li>
-                                <li>Vemuri K., Surampudi BR. 2015. An exploratory investigation of functional network connectivity of empathy and default mode networks in a free-viewing task. Brain Connect. Aug;5(6):384-400 </li>
-                                <li>Vemuri K, Bisla K., Mulpuru S, Varadarajan S. Does normal pupil diameter differences in population underlie the color selection of the #dress?. JOSA A ,Vol. 33, No. 3 / March 2016</li>
-                                <li>Kukar D., Vemuri,K.(2015) Investigating human visual search/cognition strategy in kinship matching – face matching experiment. 3rd International Conference on Cognition, Brain and Computation, IIT Gandhinagar, India. </li>
-                                <li>Aditi Mavalankar, Snigdha Dagar, Kavita Vemuri. Decoding (un)known opponent's game play, a real-life badminton eye tracking study. EAPCogsci 2015. Full paper. </li>
-                                <li>SaiKrishna Mulpuru and Kavita Vemuri. Tracking pedestrain in highbeam condition – a visual sensitivity as a function of pupil dilation analysis. ECVP 2015. </li>
-                                <li>Rajat Singla, Junaid Ahmed, Abhishek Aggarwal, Divya Kukkar, Rajendra Kumar, Kavita Vemuri.(2016) Intelligent games and sensor feedback interface for neuro-rehabilitation therapy. WCNR 2016, Philadelphia, USA</li>
-                                <li>Jasmine Bhanushali, Sai Parthasarathy Miduthuri, Kavita Vemuri. A dome-shaped interface embedded with low-cost infrared sensors for car-game control by gesture recognition. Oral presentation. HCI International 2015. Los Angeles. </li>
-                                <li>Abhishek Agarwal, Divya Kukkar, Junaid Ahmed, Rajat Singla, Kavita Vemuri . A game for inducing movement of the stroke affected arm based on the mirror-box concept. ECONS Neurogamng 2015, Los Angeles. </li>
-                                <li>Drithi Goyal, Kavita Vemuri. Preliminary comparative analysis of activations due to controlled deep-breathing and resting-state in regions covered by major arteries – a fMRI study.CBC 2015, IITG, India. </li>
-                                <li>Vemuri, K., Poplin, A. and Monachesi, P. 2014. YouPlaceIt!: a Serious Digital Game for Achieving Consensus in Urban Planning 17th AGILE Conference on Geographic Information Science (AGILE 2014), Spain. </li>
-                                <li>Niyati Mishra, Vamshi Velagapuri, and Kavita Vemuri. Visuo-spatial recall and reproduction of geometrical shapes and math equations as a function of presentation style – static, block and animation. Poster at ACCS 2014, IIT Kanpur. </li>
-                                <li>Kavita Vemuri. Analyzing ‘The Omen’: the child is evil but quantum of punishment is debatable. SCMI 2013. </li>
-                                <li>Kavita Vemuri. Estimating the functional networks from sudden respiratory changes – a fMRI Group ICA method study. 2012. Medimage 2012, Mumbai. </li>
-                            </ol>
-                        </div>
-                        <div class="col-md-4 fade-up">
-                        </div>
-                    </div>
-                </div>
-       		</section>
-
-            <section id="contact" class="white">
-                <div class="container">
-                    <div class="center fade-down section-heading">
-                        <h2 class="main-title">Get In Touch</h2>
-                        <hr>
-                    </div>
-                    <div class="row">
-                            <div class="col-md-4"></div>
-                        <div class="col-md-4 fade-up text-center">
-                            <p><span class="icon icon-home"></span>B5, Vindhya, IIIT Hyderabad, India<br/>
-                                <span class="icon icon-envelop"></span> <a href="#">kvemuri@iiit.ac.in</a> <br/>
-                                <span class="icon icon-twitter"></span> <a href="#">+91 40 6653 1000</a> <br/>
-                            </p>
-                        </div><!-- col -->
-                        <div class="col-md-4"></div>
-
-                    </div><!-- row -->
-                    <div class="gap"></div>
-                </div>
-            </section>
         </div>
+    </section>
+
+    <section id="blog" class="white">
+        <div class="container">
+            <div class="center gap fade-down section-heading">
+                <div class="gap"></div>
+                <h2 class="main-title">Our Publications</h2>
+                <hr>
+                <!-- <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p> -->
+            </div>
+            <div class="gap"></div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 fade-up">
+                    <ol>
+                        <li>Mayank Agrawal, Kavita Vemuri. Analyzing High Decibel Honking Effect on Driving Behavior
+                            Using VR and Bio-Sensors. AutomotiveUI 2019</li>
+                        <li>Sravya Vatsavayi, Priyanka Srivastava, Kavita Vemuri, Analyzing Performance Differences in
+                            Artists and Engineers- An RPM Study. Cognitive Science Society 2019, poster presentation.
+                        </li>
+                        <li>Sravya Vatsavayi, Kavita Vemuri, 'Analysing visual search strategies in artists and
+                            engineers - An eye tracking study on RPM', International Society for Intelligence Research
+                            Conference, 2019. </li>
+                        <li>Kara J. Emery, Courtney Matera, Vicki J. Volbrecht, David H. Peterzell, Kavita Vemuri, Paul
+                            Kay, Michael A. Webster , "Categorical effects on color appearance". ICVS 2019. </li>
+                        <li>Courtney Matera, Saksham Agrawal, Siddhart Srivatsav, Kara J. Emery, Vicki J. Volbrecht,
+                            Kavita Vemuri, Paul Kay, Michael A. Webster. A new angle on hue scaling. OSA Vision 2018,
+                            Reno Nevada.</li>
+                        <li>Talia Retter, Siddhart Srivatsav, Kavita Vemuri, Michael A. Webster. Sensitivity to the
+                            number of colors in an ensemble. OSA Vision 2018, Reno, Nevada. </li>
+                        <li>Mayank Agarwal, Kavita Vemuri. A Heterogeneous Traffic Virtual-Reality Simulator to Study
+                            Irritation/Anger and Driving Behaviour under Adverse Conditions. ACM British HCI 2018. (Best
+                            Poster Award). </li>
+                        <li>Rajat Singla, Raviraja Ganta and Kavita Vemuri. An Exergame Themed on the Power of Religious
+                            Belief for Stroke/Motor Rehabilitation. ACM British HCI 2018. </li>
+                        <li>Kavita Vemuri, Akanksha Srivastava, Saksham Aggrwal, Mithra Anand. Age, pupil size
+                            differences and color choices for the “dress” and the “jacket”. JOSA A. 2018. </li>
+                        <li>Nithiyashree Upara, Aditi Mavalankar, Kavita Vemuri. Eye tracking in naturalistic badminton
+                            play — comparing visual gaze pattern strategy in world-rank and amateur player. ACM ETRA
+                            PETMEI 2018. </li>
+                        <li>Dhriti Sayesh Goyal, Kavita Vemuri. Risk-taking in Roulette Wheel – Exploring the Influence
+                            of Gender, Education stream and Co-player. Foundations for Utility and Risk, FUR 2018,
+                            University of York, UK. </li>
+                        <li>Vivek Kaushal, Dhriti Sayesh Goyal, Kavita Vemuri. Comparative study of risk-taking and
+                            academic performance. Foundations for Utility and Risk, FUR 2018, University of York, UK.
+                        </li>
+                        <li>Shristi Dang, Arunima Ved, Kavita Vemuri (2017), Comparing knowledge acquisition in jigsaw
+                            map puzzle game versus self-study. European Conference on Game Based Learning, 2017, Graz,
+                            Austria. </li>
+                        <li>Raviraja Ganta; Rohan Gupta; Rajat Singla; kavita Vemuri (2017) “Power of Belief” - a game
+                            for neuro-motor rehabilitation. 11th European Conference on Games Based Learning (ECGBL17),
+                            Graz, Austria. </li>
+                        <li>Nithiyasree Upara, Jahanavi Nukireddy, Kavita Vemuri. A new test for pattern matching
+                            intelligence for school children and performance analysis with academic grade point.
+                            International Society for Intelligence Research (ISIR) 2017, Montreal, Canada. </li>
+                        <li>Mayank Agarwal & Kavita Vemuri, Simulating and analyzing chaos of Indian Traffic Condition,
+                            18th IRF World Road Meet 2017, New Delhi , India. </li>
+                        <li>Rohan Bhatial & Kavita Vemuri, Effect of Highbeam glare on driver response time. 18th IRF
+                            World Road Meet 2017, New Delhi , India . </li>
+                        <li>Vemuri K, Surampudi BR. 2015. Evidence of stimulus correlated empathy modes - Group ICA of
+                            fMRI data. Brain and Cogn. 94:32-43</li>
+                        <li>Vemuri K., Surampudi BR. 2015. An exploratory investigation of functional network
+                            connectivity of empathy and default mode networks in a free-viewing task. Brain Connect.
+                            Aug;5(6):384-400 </li>
+                        <li>Vemuri K, Bisla K., Mulpuru S, Varadarajan S. Does normal pupil diameter differences in
+                            population underlie the color selection of the #dress?. JOSA A ,Vol. 33, No. 3 / March 2016
+                        </li>
+                        <li>Kukar D., Vemuri,K.(2015) Investigating human visual search/cognition strategy in kinship
+                            matching – face matching experiment. 3rd International Conference on Cognition, Brain and
+                            Computation, IIT Gandhinagar, India. </li>
+                        <li>Aditi Mavalankar, Snigdha Dagar, Kavita Vemuri. Decoding (un)known opponent's game play, a
+                            real-life badminton eye tracking study. EAPCogsci 2015. Full paper. </li>
+                        <li>SaiKrishna Mulpuru and Kavita Vemuri. Tracking pedestrain in highbeam condition – a visual
+                            sensitivity as a function of pupil dilation analysis. ECVP 2015. </li>
+                        <li>Rajat Singla, Junaid Ahmed, Abhishek Aggarwal, Divya Kukkar, Rajendra Kumar, Kavita
+                            Vemuri.(2016) Intelligent games and sensor feedback interface for neuro-rehabilitation
+                            therapy. WCNR 2016, Philadelphia, USA</li>
+                        <li>Jasmine Bhanushali, Sai Parthasarathy Miduthuri, Kavita Vemuri. A dome-shaped interface
+                            embedded with low-cost infrared sensors for car-game control by gesture recognition. Oral
+                            presentation. HCI International 2015. Los Angeles. </li>
+                        <li>Abhishek Agarwal, Divya Kukkar, Junaid Ahmed, Rajat Singla, Kavita Vemuri . A game for
+                            inducing movement of the stroke affected arm based on the mirror-box concept. ECONS
+                            Neurogamng 2015, Los Angeles. </li>
+                        <li>Drithi Goyal, Kavita Vemuri. Preliminary comparative analysis of activations due to
+                            controlled deep-breathing and resting-state in regions covered by major arteries – a fMRI
+                            study.CBC 2015, IITG, India. </li>
+                        <li>Vemuri, K., Poplin, A. and Monachesi, P. 2014. YouPlaceIt!: a Serious Digital Game for
+                            Achieving Consensus in Urban Planning 17th AGILE Conference on Geographic Information
+                            Science (AGILE 2014), Spain. </li>
+                        <li>Niyati Mishra, Vamshi Velagapuri, and Kavita Vemuri. Visuo-spatial recall and reproduction
+                            of geometrical shapes and math equations as a function of presentation style – static, block
+                            and animation. Poster at ACCS 2014, IIT Kanpur. </li>
+                        <li>Kavita Vemuri. Analyzing ‘The Omen’: the child is evil but quantum of punishment is
+                            debatable. SCMI 2013. </li>
+                        <li>Kavita Vemuri. Estimating the functional networks from sudden respiratory changes – a fMRI
+                            Group ICA method study. 2012. Medimage 2012, Mumbai. </li>
+                    </ol>
+                </div>
+                <div class="col-md-4 fade-up">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="white">
+        <div class="container">
+            <div class="center fade-down section-heading">
+                <h2 class="main-title">Get In Touch</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 fade-up text-center">
+                    <p><span class="icon icon-home"></span>B5, Vindhya, IIIT Hyderabad, India<br />
+                        <span class="icon icon-envelop"></span> <a href="#">kvemuri@iiit.ac.in</a> <br />
+                        <span class="icon icon-twitter"></span> <a href="#">+91 40 6653 1000</a> <br />
+                    </p>
+                </div><!-- col -->
+                <div class="col-md-4"></div>
+
+            </div><!-- row -->
+            <div class="gap"></div>
+        </div>
+    </section>
+    </div>
 
     <div id="footer-wrapper">
         <!-- <section id="bottom" class=""> -->
-    <!--         <div class="container">
+        <!--         <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 about-us-widget">
                         <h4>Global Coverage</h4>
@@ -702,12 +892,14 @@
                     </div>
                     <div class="col-sm-4">
                         <ul class="pull-right">
-                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
+                            <!--#gototop-->
                         </ul>
                     </div>
                 </div>
             </div>
-        </footer><!--/#footer-->
+        </footer>
+        <!--/#footer-->
     </div>
 
 
@@ -717,4 +909,5 @@
     <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script> -->
     <script src="js/init.js"></script>
 </body>
+
 </html>
